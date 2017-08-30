@@ -1,0 +1,174 @@
+@charset "utf-8";
+
+@keyframes slidein {
+0% {
+	margin-top: 150%;
+	
+}
+
+60%{
+	margin-top: -5%;
+
+}
+100%{
+	margin-top: 0%;
+
+}
+
+}
+
+img{
+    width:50%;
+    box-shadow:2px 2px #02010a;
+    margin:5px;
+    padding:1px;
+}
+
+.noline{
+	text-decoration: none;
+}
+
+.blur{
+    filter: blur(10px);
+}
+
+.sGray{
+    filter: grayscale(1);
+}
+
+.sepia{
+    filter: sepia(0.9);
+}
+
+@media  screen and (min-width: 900px){
+    *{
+	margin: 0;
+	padding:0;
+}
+
+html{
+	background-color: #02010a;
+}
+#wrap{
+	width:900px;
+	margin:0 auto;
+	font-family: "Dancing Script";
+}
+
+
+
+header{
+	width:100%;
+	background-color:  #5b7989;
+	text-align: left;
+	color: white;
+	text-shadow: 2px 2px #02010a;
+    border-radius: 10px;
+    animation-name: slidein;
+	animation-duration:2s;
+}
+
+nav{
+	float:right;
+}
+
+nav a{
+	color:white;
+}
+
+nav a:hover{
+	color:blue;
+}
+
+article{
+    background-color:  #82c3a6;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+	flex-wrap: wrap;
+	
+}
+
+article div  {
+    flex:1 1 33.3%;
+}
+
+
+
+footer{
+	font-family: "Dancing Script";
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	background-color: #c6d5c5;
+
+}
+
+footer div{
+	flex:1 1;
+}
+
+}
+@media  screen and (max-width: 900px){
+
+*{
+	margin: 0;
+	padding:0;
+}
+html{
+	background-color: #02010a;
+}
+
+#wrap{
+	width:100%;
+	margin:0 auto;
+}
+
+header{
+	font-family: "Dancing Script";
+	width:100%;
+	background-color:  #5b7989;
+	text-align: center;
+	color: white;
+	text-shadow: 2px 2px #02010a;
+    border-radius: 10px;
+    animation-name: slidein;
+	animation-duration:2s;
+}
+
+
+nav a{
+	color:white;
+}
+
+nav a:hover{
+	color:blue;
+}
+
+article{
+	background-color:  #82c3a6;
+	text-align: center;
+}
+ 
+footer{
+	font-family: "Dancing Script"; 
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	background-color: #c6d5c5;
+
+}
+
+footer div{
+	flex:1 1;
+}
+	
+}
+
+
+

@@ -1,0 +1,232 @@
+@charset "utf-8";
+
+*{
+	margin: 0;
+	padding:0;
+}
+
+img{
+	box-shadow:2px 2px #02010a;
+}
+
+
+.noline{
+	text-decoration: none;
+}
+
+@keyframes slidein {
+0% {
+	margin-top: 150%;
+	
+}
+
+60%{
+	margin-top: -5%;
+
+}
+100%{
+	margin-top: 0%;
+
+}
+
+}
+
+@media  screen and (min-width: 900px){
+
+html{
+	background-color: #02010a;
+}
+#wrap{
+	width:900px;
+	margin:0 auto;
+	font-family: "Dancing Script";
+}
+
+
+header{
+	width:100%;
+	background-color:  #5b7989;
+	text-align: left;
+	color: white;
+	text-shadow: 2px 2px #02010a;
+	border-radius: 10px;
+	animation-name: slidein;
+	animation-duration:2s;
+}
+
+nav{
+	float:right;
+}
+
+nav a{
+	color:white;
+}
+
+nav a:hover{
+	color:blue;
+}
+
+article{
+	background-color:  #82c3a6;
+	text-align: center;
+}
+
+.imgCentral img{
+	 
+	width:50%;
+	margin:5px;
+	padding: 5px;
+ }
+
+
+
+.imgSecundaria{
+	background-color: #d5c75f;
+	display:flex;
+	flex-direction: row;
+	flex-wrap: wrap;	
+	align-items: center;
+	border: 1px solid;
+}
+
+
+.imgSecundaria div{
+	flex: 1;
+	margin:5px;
+	padding: 10px;
+
+}
+
+.imgIzq:hover{
+	transform: rotate(10deg);
+	box-shadow: 2px 2px #82c3a6;
+}
+
+.imgDer:hover{
+	transform: translate(20px , -5px);
+	box-shadow: 2px 2px #82c3a6;
+
+}
+
+div a img{
+	width:80%;
+}
+
+footer{
+	font-family: "Dancing Script";
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	background-color: #c6d5c5;
+
+}
+
+footer div{
+	flex:1 1;
+}
+
+.aux{
+	display:none;
+}
+
+}
+@media  screen and (max-width: 900px){
+
+html{
+	background-color: #02010a;
+}
+
+#wrap{
+	width:100%;
+	margin:0 auto;
+}
+
+header{
+	font-family: "Dancing Script";
+	width:100%;
+	background-color:  #5b7989;
+	text-align: center;
+	color: white;
+	text-shadow: 2px 2px #02010a;
+	border-radius: 10px;
+	animation-name: slidein;
+	animation-duration:2s;
+}
+
+
+nav a{
+	color:white;
+}
+
+nav a:hover{
+	color:blue;
+}
+
+article{
+	background-color:  #82c3a6;
+	text-align: center;
+}
+ .imgCentral img{
+	 margin:5px;
+	 padding: 5px;
+	 width:80%;
+ }
+
+
+.imgSecundaria{
+	background-color: #d5c75f;
+	display:flex;
+	flex-direction: column;
+	flex-wrap: wrap;	
+	align-items: center;
+	border: 1px solid;
+}
+
+
+.imgSecundaria div{
+	margin:5px;
+	padding: 10px;
+
+}
+
+.imgIzq:hover{
+	transform: rotate(10deg);
+	box-shadow: 2px 2px #82c3a6;
+}
+
+.imgDer:hover{
+	transform: translate(20px , -5px);
+	box-shadow: 2px 2px #82c3a6;
+
+}
+
+div a img{
+	width:80%;
+	border: 2px ;
+}
+
+footer{
+	font-family: "Dancing Script"; 
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	background-color: #c6d5c5;
+
+}
+
+footer div{
+	flex:1 1;
+}
+
+.aux{
+	font-family: "Dancing Script";
+	display:block;
+}
+}
+
+
+
